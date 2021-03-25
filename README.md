@@ -17,7 +17,7 @@ In meinem Markdown halte ich fest, was ich neues im Modul 300 gelernt habe und w
 * [80 Ergänzungen zu den Unterlagen](#80-ergänzungen-zu-den-unterlagen)
 
 
-# 10 Toolumgebung
+## 10 Toolumgebung
 ## 01 - Github Account
 
 Als erstes wird ein Github Account benötigt den man ganz einfach im www.github.com erstellen kann. 
@@ -222,11 +222,11 @@ Nun muss die folgende Datei bearbeitet werden:  `File` > `Preferences` > `Settin
         "**/.DS_Store": true
       },
 ```
-# 20 - Infrastruktur-Automatisierung
+## 20 - Infrastruktur-Automatisierung
 
 
 
-# 25 Sicherheit
+## 25 Sicherheit
 
 ## 01 - Firewall
 
@@ -321,23 +321,23 @@ Diese drei wichtigen Eigenschaften führten zum Erfolg von ssh:
 Wem die Authentifizierung über Passwörter trotz der Verschlüsselung zu unsicher ist, der benutzt das Public-Key-Verfahren. Hierbei wird asymmetrische Verschlüsselung genutzt, um den Benutzer zu authentifizieren.
 
 
-# Vergleich Vorwissen - Wissenszuwachs
+## Vergleich Vorwissen - Wissenszuwachs
 
 Vorher wusste ich so ziemlich gar nichts über diese Themen ausser Virtualbox. Ich wusste wie man ein Ubuntu Server aufsetzt. Ich wusste am Anfang nicht was ein Atom ist. Jetzt weiss ich, dass ist ein Editor, nur besser und übersichtlicher. Wie man ein Vagrantfile gestaltet wusste ich auch nicht. Jetzt weiss ich auch wie man diese erweitern kann.
 
-# Reflexion
+## Reflexion
 
 Ich habe einiges lernen können, über diese Themen. Vor allem wusste ich nicht was Vagrant ist und jetzt weiss ich was es macht und wie ich ein solches File erzeugen kann. Was ich auch noch gelernt habe ist, was Github überhaupt ist und was ein Markdown ist. Mit dem kann man in Atom eine Dokumentation schreiben und gleichzeitig auf Github hochladen mit dem pushen. Anfangs wusste ich nicht genau wie das geht, nach einer Erklärung wusste ich das dann. Bilder konnte ich mit der Zeit dann auch schon hochladen. Die bestimmten Befehle wie man Tabellen oder Schriften gestalten möchte, habe ich kennengelernt.
 
 
-# Glosar
+## Glosar
 
 
-# 30 Container
+## 30 Container
 
-# 35 Sicherheit
+## 35 Sicherheit
 
-# 40 Kubernetes (k8s)
+## 40 Kubernetes (k8s)
 
-# 80 Ergänzungen zu den Unterlagen
+## 80 Ergänzungen zu den Unterlagen
 
