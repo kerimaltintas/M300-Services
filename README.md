@@ -259,7 +259,7 @@ Dieser Screenshot zeigt auf welche Ports nun bereitstehen:
 Der Reverse Proxy (umgekehrter Proxy) hat eine ähnliche Aufgabe wie der normale Proxy, er ist eine zusätzliche Schutzmassnahme, die vor einen oder mehreren Webservern geschaltet werden kann.
 Im Gegensatz zu einem Proxy wird die Adressumsetzung in der entgegengesetzten Richtung durchgeführt. 
 Die Aufgabe des Reverse Proxys ist es Anfragen von Servern stellvertretend anzunehmen und an den entsprechenden Client weiterzuleiten.
-Dabei gewährt der Reverse Proxy einem oder mehreren Clients eines externen Netzes den Zugriff auf ein internes Netz.
+Dabei gewährt der Reverse Proxy einem oder mehreren Clients eines externen Netzes den Zugriff auf ein internes Netz. Um dies korrekt auf die Beine stellen zu können uss das Vagrantfile mit folgendem Inhalt ausgestattet werden:
 
 ````
 Vagrant.configure("2") do |config|
@@ -292,7 +292,7 @@ end
 
 ## 03 - Benutzer und Rechte
 
-Mit dem folgenden Skript wird ein User erstellt. Dieser User bekommt Berechtigungen und kann somit für ihn berechtigte Ordner öffnen und in Dateien einsehen. Hierfür habe ich ebenfalls eine seperate VM erstellt und folgende Configs der VM zugewiesen.
+Mit dem folgenden Skript wird ein User erstellt. Dieser User bekommt Berechtigungen und kann somit für ihn berechtigte Ordner öffnen und in Dateien einsehen. Hierfür habe ich ebenfalls eine seperate VM erstellt und folgende Configs der VM zugewiesen:
 
 ````
 Vagrant.configure("2") do |config|
@@ -324,7 +324,7 @@ Es gibt einige wichtige Punkte die den Erfolg von SSH ausmachen:
 * Verschlüsselung der Datenübertragung, kein Mithören durch Unbefugte
 * Datenintegrität, keine Manipulation der übertragenen Daten
 
-Wem die Authentifizierung über Passwörter trotz der Verschlüsselung zu unsicher ist, der benutzt das Public-Key-Verfahren. Hierbei wird asymmetrische Verschlüsselung genutzt, um den Benutzer zu authentifizieren.
+Wem die Authentifizierung über Passwörter trotz der Verschlüsselung zu unsicher ist, der könnte das Public-Key-Verfahren benutzen. Bei diesem Verfahren, wird asymmetrische Verschlüsselung genutzt um den Benutzer zu authentifizieren.
 
 
 ## Vergleich Vorwissen - Wissenszuwachs
