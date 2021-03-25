@@ -1,0 +1,15 @@
+Vagrant.configure("2") do |config|
+config.vm.box = "debian/buster64"
+config.vm.provider "virtualbox" do |vb|
+vb.name="M300BenutzerRechte01"
+end
+config.vm.provision "shell", inline: <<-SHELL
+sudo useradd Kerim
+sudo groupadd M300
+sudo usermod -aG M300 Kerim
+sudo touch test.txt
+sudo chmod 774 test.txt
+sudo chown Kerim test.txt
+sudo chgrp M300 test.txt
+SHELL
+end
