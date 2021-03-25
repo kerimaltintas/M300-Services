@@ -17,7 +17,7 @@ In meinem Markdown halte ich fest, was ich neues im Modul 300 gelernt habe und w
 * [80 Ergänzungen zu den Unterlagen](#80-ergänzungen-zu-den-unterlagen)
 
 
-# 10 Toolumgebung
+## 10 Toolumgebung
 ## 01 - Github Account
 
 Als erstes wird ein Github Account benötigt den man ganz einfach im www.github.com erstellen kann. 
@@ -170,7 +170,7 @@ $ vagrant up --provider virtualbox
 
 
 
-#### Automatisierten Webserver aufsetzen
+### Automatisierten Webserver aufsetzen
 
 Folgendes Szenario, man ist ein Hosting Unternehemn und man möchte, konstant VMs laufen haben, auf den das gleiche läuft. Natürlich könnte man dies per Hand machen, viel schneller geht dies jedoch wenn man ein Code hat, welches jeweils immer eine VM erstellt wenn man dieses ausführt.
 
@@ -186,7 +186,7 @@ Vagrant.configure(2) do |config|
   config.vm.network "forwarded_port", guest:80, host:8080, auto_correct: true
   config.vm.synced_folder ".", "/var/www/html"
 config.vm.provider "virtualbox" do |vb|
-   vb.name = "M300WEB01"
+   vb.name = "M300WEB1"
   vb.memory = "512"
 end
 config.vm.provision "shell", inline: <<-SHELL
@@ -222,11 +222,11 @@ Nun muss die folgende Datei bearbeitet werden:  `File` > `Preferences` > `Settin
         "**/.DS_Store": true
       },
 ```
-# 20 - Infrastruktur-Automatisierung
+## 20 - Infrastruktur-Automatisierung
 
 
 
-# 25 Sicherheit
+## 25 Sicherheit
 
 ## 01 - Firewall
 
@@ -254,8 +254,8 @@ end
 
 ## 02 - Reverse Proxy
 
-Ein Reverse Proxy ("umgekehrter Proxy") ist eine zusätzliche Schutzmaßnahme, die vor einen oder mehreren Webservern geschaltet werden kann.
-Im Gegensatz zu einem Proxy wird die Adressumsetzung in der entgegengesetzten Richtung durchgeführt.
+Der Reverse Proxy (umgekehrter Proxy) hat eine ähnliche Aufgabe wie der normale Proxy, er ist eine zusätzliche Schutzmassnahme, die vor einen oder mehreren Webservern geschaltet werden kann.
+Im Gegensatz zu einem Proxy wird die Adressumsetzung in der entgegengesetzten Richtung durchgeführt. 
 Die Aufgabe des Reverse Proxys ist es Anfragen von Servern stellvertretend anzunehmen und an den entsprechenden Client weiterzuleiten.
 Dabei gewährt der Reverse Proxy einem oder mehreren Clients eines externen Netzes den Zugriff auf ein internes Netz.
 
@@ -290,7 +290,7 @@ end
 
 ## 03 - Benutzer und Rechte
 
-Mit einem Script wurde ein Benutzer, eine Gruppe und bestimmte Berechtigungen auf ein Textfile gesetzt.
+Mit dem folgenden Skript wird ein User erstellt. Dieser User bekommt Berechtigungen und kann somit für ihn berechtigte Ordner öffnen und in Dateien einsehen. Hierfür habe ich ebenfalls eine seperate VM erstellt und folgende Configs der VM zugewiesen.
 
 ````
 Vagrant.configure("2") do |config|
@@ -312,32 +312,32 @@ end
 ````
 
 ## 04 - SSH
-Diese drei wichtigen Eigenschaften führten zum Erfolg von ssh:
+Es gibt einige wichtige Punkte die den Erfolg von SSH ausmachen:
 
-* Authentifizierung der Gegenstelle, kein Ansprechen falscher Ziele
+* Authentifizierung der Gegenstelle, kein fehlerhaftes Ansprechen
 * Verschlüsselung der Datenübertragung, kein Mithören durch Unbefugte
 * Datenintegrität, keine Manipulation der übertragenen Daten
 
 Wem die Authentifizierung über Passwörter trotz der Verschlüsselung zu unsicher ist, der benutzt das Public-Key-Verfahren. Hierbei wird asymmetrische Verschlüsselung genutzt, um den Benutzer zu authentifizieren.
 
 
-# Vergleich Vorwissen - Wissenszuwachs
+## Vergleich Vorwissen - Wissenszuwachs
 
 Vorher wusste ich so ziemlich gar nichts über diese Themen ausser Virtualbox. Ich wusste wie man ein Ubuntu Server aufsetzt. Ich wusste am Anfang nicht was ein Atom ist. Jetzt weiss ich, dass ist ein Editor, nur besser und übersichtlicher. Wie man ein Vagrantfile gestaltet wusste ich auch nicht. Jetzt weiss ich auch wie man diese erweitern kann.
 
-# Reflexion
+## Reflexion
 
 Ich habe einiges lernen können, über diese Themen. Vor allem wusste ich nicht was Vagrant ist und jetzt weiss ich was es macht und wie ich ein solches File erzeugen kann. Was ich auch noch gelernt habe ist, was Github überhaupt ist und was ein Markdown ist. Mit dem kann man in Atom eine Dokumentation schreiben und gleichzeitig auf Github hochladen mit dem pushen. Anfangs wusste ich nicht genau wie das geht, nach einer Erklärung wusste ich das dann. Bilder konnte ich mit der Zeit dann auch schon hochladen. Die bestimmten Befehle wie man Tabellen oder Schriften gestalten möchte, habe ich kennengelernt.
 
 
-# Glosar
+## Glosar
 
 
-# 30 Container
+## 30 Container
 
-# 35 Sicherheit
+## 35 Sicherheit
 
-# 40 Kubernetes (k8s)
+## 40 Kubernetes (k8s)
 
-# 80 Ergänzungen zu den Unterlagen
+## 80 Ergänzungen zu den Unterlagen
 
