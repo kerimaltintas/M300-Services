@@ -165,7 +165,6 @@ Nach einiger Wartezeit sollte der Befehl erfolgreich durchgelaufen sein, danach 
 $ vagrant up --provider virtualbox
 ````
 ### Netzwerkplan
-
 ![alt text](bilder/NetzwerkPlan.JPG "netzwerkplan" )
 
 
