@@ -32,7 +32,7 @@ Folgendes Schritte müssen beachtet werdenn:
 
 ### Repository erstellen
 
-Damit man die Dokumentation festhalen kann muss man im Repository eine ReadMe Datei erstellen.. In diese Datei gehört dann die Dokumentation.
+Damit man die Dokumentation festhalen kann muss man im Repository eine ReadMe Datei erstellen. In diese Datei gehört dann die Dokumentation.
 
 1. Anmelden unter www.github.com
 2. Auf der Startseite dann start a project anwählen
@@ -66,7 +66,7 @@ Damit man die Dokumentation festhalen kann muss man im Repository eine ReadMe Da
 
 ## 02 - Git Client
 
-Jetzt muss der Git Client installiert werden. Dieser ermöglicht uns, Cloud-Repositories zu klonen, zu pullen (herunteraden) oder ein lokales Repository zu pushen (hochladen).
+Nun kann man den Git Client installieren. Dieser ermöglicht es, Cloud-Repositories zu klonen, zu pullen (herunteraden) oder ein lokales Repository zu pushen (hochladen).
 
 Hierzu müssen folgende Schritte durchgeführt werden:
 
@@ -104,7 +104,7 @@ Mit dem folgenden Befehl werden Geänderte Datei(en) werden rot aufgelistet:
 
 ### Repository herunteraden
 
-Dieser Befehl ist wichtig, damit die Änderungen lokal gemacht werden können und anschliessen einfach auf Github hochgeladen werden kömmem. Dazu hier die Schritte: 
+Diese ist wichtig, damit die Änderungen lokal gemacht werden können und anschliessend einfach auf Github hochgeladen werden. Dazu muss man folgende Schritte beachten:
 
 1. Terminal Bash öffnen
 2. Ordner im gewünschtenn Verzeichnis erstellen
@@ -149,9 +149,9 @@ Hier geht es darum das meine eine lauffähige Linuxmaschine mit einem Hyperviser
 
 ## 04 - Vagrant
 
-Wenn man schon einmal selber die VM's erstellt hat, dann weiss man für mehrere braucht man lange. Für eine schnellere Variante gibt es Vagrant. Mit dem können VM's automatisch erstellt werden mit nur einem kurzen Code.
+Ständige die VM's manuell zu erstellen, wird mit der Zeit sehr aufwändig und langweilig. Dazu gibt es als Hilfestellung Vagrant. Mit Vagrant kann man ganz einfach VM's mit Vorgaben erstellen ohne grosse Probleme.
 
-Anschliessend sollte man die VM's im VirtualBox sehen können. Wie auf dem Screenshot:
+Zum Test habe ich mal zwei VM's mit Vagrant erstellt die man auf dem Screenshot sehen kann:
 
 ![alt text](Bilder/TestVMs.JPG "netzwerkplan")
 
@@ -176,13 +176,7 @@ $ vagrant up --provider virtualbox
 
 ### Automatisierten Webserver aufsetzen
 
-Folgendes Szenario, man ist ein Hosting Unternehemn und man möchte, konstant VMs laufen haben, auf den das gleiche läuft. Natürlich könnte man dies per Hand machen, viel schneller geht dies jedoch wenn man ein Code hat, welches jeweils immer eine VM erstellt wenn man dieses ausführt.
-
-In meinem Fall konnte ich automatisiert einen Webserver installieren, ausserdem habe ich darauf geachtet dass ich das Vagrantfile so anpasse, dass ich auch einen schönen VM Namen habe, natürlich müsste man dies dann auch im Linux anpassen, aber das ist dann eine reinse Config Datei Erweitertungs Sache.
-
-Dafür wurde zuerst ein neuer Ordner erstellt, in dem ich die Apache Tests durchführen werde.
-
-Danach wird das der folgende Code als Vagrantfile erstellt:
+Hier war die Aufgabe einen Webserver zu erstellen und das ganze automatisiert. Hierfür konnte man wieder mit Vagrant arbeiten und das notwendige Vagrantfile anpassen. Dieses File sollte folgendes beinhalten:
 
 ```
 Vagrant.configure(2) do |config|
@@ -202,15 +196,15 @@ SHELL
 end
 ```
 
-Mit diesem Code konnte ich die Linux Maschine M300WEB1 erstellen, ein test über den Browser über localhost:8080 hat gezeigt, dass der Webserver funktioniert:
+Mit diesem Code konnte ich die Linux Maschine M300WEB1 erstellen, ein Test über den Browser mit localhost:8080 hat mir gezeigt, dass der Webserver funktioniert:
 
 ![alt text](Bilder/Apache.JPG "apache")
 
 ## 05 - Visual Studio Code
 
-Einige der Klasse haben sich dazu entschieden nicht mit Visual Studio Code zu arbeiten, ich hingegen mag es mit Visual Studio Code zu arbeiten, demanch wurde alles gemäss der Anleitung installiert das beinhaltet folgende Schritte:
+Unsere Klasse hat sich in diesem Thema ein wenig gespaltet, denn nicht alle wollten ihr Markdown mit Visual Studio Code erstellen. Da ich Visual Studio Code von früheren Arbeiten kannte, musste ich nicht viel überlegen und entschied mich dies zu benutzen. Es wurde alles gemäss der Anleitung installiert diese beinhaltet folgende Schritte.
 
-Zuerst wurden folgenden Extensions installiert:
+Zuerst mussten folgenden Extensions installiert werden:
 
 * Markdown All in One (von Yu Zhang)
 * Vagrant Extension (von Marco Stanzi)
@@ -335,12 +329,11 @@ Wem die Authentifizierung über Passwörter trotz der Verschlüsselung zu unsich
 
 ## Vergleich Vorwissen - Wissenszuwachs
 
-Vorher wusste ich so ziemlich gar nichts über diese Themen ausser Virtualbox. Ich wusste wie man ein Ubuntu Server aufsetzt. Ich wusste am Anfang nicht was ein Atom ist. Jetzt weiss ich, dass ist ein Editor, nur besser und übersichtlicher. Wie man ein Vagrantfile gestaltet wusste ich auch nicht. Jetzt weiss ich auch wie man diese erweitern kann.
+Vor diesem Modul hatte ich keinen wirkliche Idee wie dies ablaufen sollte. Ich kannte von den Umgebungen nur Virtualbox und wusste wie ich eine VM darin erstellen kann. Nun ist mir bewusst, wie man mit all den Umgebungen wie Github, Vagrant oder Bash umgeht und sie korrekt anwendet.
 
 ## Reflexion
 
-Ich habe einiges lernen können, über diese Themen. Vor allem wusste ich nicht was Vagrant ist und jetzt weiss ich was es macht und wie ich ein solches File erzeugen kann. Was ich auch noch gelernt habe ist, was Github überhaupt ist und was ein Markdown ist. Mit dem kann man in Atom eine Dokumentation schreiben und gleichzeitig auf Github hochladen mit dem pushen. Anfangs wusste ich nicht genau wie das geht, nach einer Erklärung wusste ich das dann. Bilder konnte ich mit der Zeit dann auch schon hochladen. Die bestimmten Befehle wie man Tabellen oder Schriften gestalten möchte, habe ich kennengelernt.
-
+Ich hatte schon im Geschäft ein wenig mit Github gearbeitet aber war noch lange nicht sattelfest in diesem Bereich. dank diesem Modul habe ich einiges dazu gelernt und konnte meine Kenntnisse erweitern. Doch mit Vagrant hatte ich davor noch garnichts zutun. Ich wusste zwar das es Möglichkeiten gibt vereinfacht VM's zu erstellen, doch das dies einem soviel arbeit erspaart war mich nicht bewusst. Nun kann ich mit Github und auch Vagrant arbeiten und verstehe wozu dies hilfreich ist. Auch die Befehle um mein Markdown möglichst übersichtlich zu gestalten, lernte ich sehr schnell mit der Zeit. Dies löste auch ein Glücksgefühl in mir aus, da ich voran kam und mein Markdown übersichtlich gestalten konnte.
 
 
 
