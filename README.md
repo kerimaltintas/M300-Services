@@ -202,7 +202,7 @@ SHELL
 end
 ```
 
-Mit diesem Code konnte ich die Linux Maschine M300WEB01 erstellen, ein test über den Browser über localhost:8080 hat gezeigt, dass der Webserver funktioniert:
+Mit diesem Code konnte ich die Linux Maschine M300WEB1 erstellen, ein test über den Browser über localhost:8080 hat gezeigt, dass der Webserver funktioniert:
 
 ![alt text](Bilder/Apache.JPG "apache")
 
@@ -319,6 +319,8 @@ end
 
 ````
 Hier noch die Ausgabe mit einer SSH-Verbindung auf die VM:
+
+
 ![alt text](Bilder/BenutzerRechte.JPG "BenutzerRechte")
 
 ## 04 - SSH
