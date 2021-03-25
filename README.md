@@ -151,6 +151,10 @@ Hier geht es darum das meine eine lauffähige Linuxmaschine mit einem Hyperviser
 
 Wenn man schon einmal selber die VM's erstellt hat, dann weiss man für mehrere braucht man lange. Für eine schnellere Variante gibt es Vagrant. Mit dem können VM's automatisch erstellt werden mit nur einem kurzen Code.
 
+Anschliessend sollte man die VM's im VirtualBox sehen können. Wie auf dem Screenshot:
+
+![alt text](Bilder/TestVMs.JPG "netzwerkplan")
+
 #### Erste VM mit Vagrant aufsetzen
 
 Im gewünschten Verzeichnis kann man mit einer Zeile, die VM erzeugen:
@@ -199,6 +203,8 @@ end
 ```
 
 Mit diesem Code konnte ich die Linux Maschine M300WEB01 erstellen, ein test über den Browser über localhost:8080 hat gezeigt, dass der Webserver funktioniert:
+
+![alt text](Bilder/Apache.JPG "apache")
 
 ## 05 - Visual Studio Code
 
@@ -250,7 +256,9 @@ SHELL
 end
 
 ````
+Dieser Screenshot zeigt auf welche Ports nun bereitstehen:
 
+![alt text](Bilder/FWPorts.JPG "FWPorts")
 
 ## 02 - Reverse Proxy
 
@@ -310,6 +318,8 @@ SHELL
 end
 
 ````
+Hier noch die Ausgabe mit einer SSH-Verbindung auf die VM:
+![alt text](Bilder/BenutzerRechte.JPG "BenutzerRechte")
 
 ## 04 - SSH
 Es gibt einige wichtige Punkte die den Erfolg von SSH ausmachen:
@@ -330,7 +340,6 @@ Vorher wusste ich so ziemlich gar nichts über diese Themen ausser Virtualbox. I
 Ich habe einiges lernen können, über diese Themen. Vor allem wusste ich nicht was Vagrant ist und jetzt weiss ich was es macht und wie ich ein solches File erzeugen kann. Was ich auch noch gelernt habe ist, was Github überhaupt ist und was ein Markdown ist. Mit dem kann man in Atom eine Dokumentation schreiben und gleichzeitig auf Github hochladen mit dem pushen. Anfangs wusste ich nicht genau wie das geht, nach einer Erklärung wusste ich das dann. Bilder konnte ich mit der Zeit dann auch schon hochladen. Die bestimmten Befehle wie man Tabellen oder Schriften gestalten möchte, habe ich kennengelernt.
 
 
-## Glosar
 
 
 ## 30 Container
