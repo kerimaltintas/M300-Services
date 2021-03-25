@@ -166,7 +166,7 @@ $ vagrant up --provider virtualbox
 ````
 ### Netzwerkplan
 
-![alt text](bilder/NetzwerkPlan.JPG "netzwerkplan" )
+![alt text](bilder/NetzwerkPlan.JPG "netzwerkplan")
 
 
 
